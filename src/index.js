@@ -4,6 +4,7 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import manageBand from './reducers/manageBand';
+import { ConnectedUsers, Users }  from '../src/components/Users';
 
 // we wrap store in a function for testing purposes
 export const configureStore = () => {
@@ -14,7 +15,7 @@ let store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <App store={store}/>
+    <ConnectedUsers />
   </Provider>,
   document.getElementById('root')
 );
