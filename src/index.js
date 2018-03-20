@@ -19,3 +19,10 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
+/* Note:
+In the above example, the connected users and users component is imported to the file.
+We import the createStore function from the redux library along with the provider method from react-redux.
+The provider function is a redux middlewear that connects components to the redux store thus rerender the component when state changes occur but not all components, the components whoses connected
+state value changes. 
+*/
